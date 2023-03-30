@@ -1,0 +1,39 @@
+
+<DOCTYPE html>
+<head>
+
+<title>SiteSenha</title>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>    
+        $(document).ready(function() {
+        $('form').submit(function(event) {
+        event.preventDefault();
+        var username = $('#username').val();
+        var password = $('#password').val();
+        if (password === '1234') {
+        window.location= "http://google.com.br";
+        } else {
+        alert('Senha incorreta')
+    }
+ });
+});
+</script>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <label for="username">Nome de usuário:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

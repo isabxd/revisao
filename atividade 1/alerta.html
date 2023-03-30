@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Alerta </title> 
+<meta charset="utf-8">
+        <title> Alerta </title>
+        <script scr="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head> 
+<body> 
+<form name="formCadastro" onsubmit="return validarFormulario()" method="post">
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" name="nome">
+    <input type="submit" value="Enviar">
+</form>
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["nome"].value;
+        if (nomePessoa == "") {
+            alert("Favor informar o seu nome!");
+            return false;     
+        }
+        else{
+            alert("Olá, " + nomePessoa + " !");
+            return true;
+        }
+    }
+</script>
+</body> 
+</html> 
+
+
+
+
+
+
+
+
+
